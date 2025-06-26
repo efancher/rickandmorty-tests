@@ -10,6 +10,7 @@ BASE_URL = "https://rickandmortyapi.com/api"
     (9999, None),  # Invalid ID
 ])
 def test_episode_by_id(episode_id, expected_name):
+    """ Verifies we can get an episode by id """
     response = requests.get(f"{BASE_URL}/episode/{episode_id}", timeout=10)
     if expected_name:
         assert response.status_code == 200

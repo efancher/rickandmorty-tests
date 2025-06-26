@@ -34,6 +34,7 @@ pytest tests/
 ## Docker
 
 ```bash
+# Currently has an network error. I ran out of time to investigate.
 docker-compose up --build
 ```
 
@@ -44,7 +45,14 @@ docker-compose up --build
 
 ## Bonus Features
 
-- GitHub Actions CI
-- Docker support
+- GitHub Actions CI - partial has an error
+- Docker support - partial has an error
 - Parametric API tests
 - Page Object Model for UI
+
+## To Do
+# Fix GA and Docker support
+# Longer running tests that click multiple links
+# Performance tests
+# More edge cases 
+
