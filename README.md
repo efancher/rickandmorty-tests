@@ -7,8 +7,8 @@ This test suite covers basic automated tests for the Rick and Morty public API a
 - ✅ API tests: Characters, filters, status codes
 - ✅ UI tests: Landing page, character cards, Docs link
 - ✅ Logging and parametric tests
-- ✅ Partial - CI with GitHub Actions
-- ✅ Docker support
+- ✅ CI with GitHub Actions
+- ✅ Partial - Docker support
 
 ## Tech Stacks
 pytest + requests for the api tests
