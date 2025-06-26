@@ -60,6 +60,9 @@ docker-compose up --build
 - Parametric API tests
 - Page Object Model for UI
 
+## Sample output
+Sample output is in test_run.output
+
 ## To Do
 # Fix GA and Docker support
 # Longer running tests that click multiple links
