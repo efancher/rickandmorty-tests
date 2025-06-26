@@ -1,0 +1,10 @@
+version: '3'
+services:
+  test-runner:
+    build: .
+    platform: linux/amd64
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PYTHONPATH=/app
