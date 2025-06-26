@@ -8,7 +8,7 @@ This test suite covers basic automated tests for the Rick and Morty public API a
 - ✅ UI tests: Landing page, character cards, Docs link
 - ✅ Logging and parametric tests
 - ✅ Partial - CI with GitHub Actions
-- ✅ Partial - Docker support
+- ✅ Docker support
 
 ## Tech Stacks
 pytest + requests for the api tests
@@ -64,7 +64,7 @@ docker-compose up --build
 Sample output is in test_run.output
 
 ## To Do
-# Fix GA and Docker support
+# Fix Docker support
 # Longer running tests that click multiple links
 # Performance tests
 # More edge cases, especially for the api
