@@ -1,0 +1,66 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.9.6, pytest-8.4.1, pluggy-1.6.0 -- /Users/edfancher/interview_practice/witnessai/rickandmorty-tests/venv/bin/python3
+cachedir: .pytest_cache
+rootdir: /Users/edfancher/interview_practice/witnessai/rickandmorty-tests
+configfile: pytest.ini
+collecting ... collected 25 items
+
+tests/api/test_characters.py::test_get_all_characters PASSED             [  4%]
+tests/api/test_characters.py::test_get_character_by_id[1] PASSED         [  8%]
+tests/api/test_characters.py::test_get_character_by_id[2] PASSED         [ 12%]
+tests/api/test_characters.py::test_get_character_by_id[3] PASSED         [ 16%]
+tests/api/test_characters.py::test_filter_by_status[alive] PASSED        [ 20%]
+tests/api/test_characters.py::test_filter_by_status[dead] PASSED         [ 24%]
+tests/api/test_characters.py::test_filter_by_status[unknown] PASSED      [ 28%]
+tests/api/test_episode.py::test_get_all_episodes PASSED                  [ 32%]
+tests/api/test_episode.py::test_episode_detail PASSED                    [ 36%]
+tests/api/test_episode_ddt.py::test_episode_by_id[1-Pilot] PASSED        [ 40%]
+tests/api/test_episode_ddt.py::test_episode_by_id[10-Close Rick-counters of the Rick Kind] PASSED [ 44%]
+tests/api/test_episode_ddt.py::test_episode_by_id[9999-None] PASSED      [ 48%]
+tests/api/test_graphql.py::test_graphql_character_query PASSED           [ 52%]
+tests/api/test_graphql_ddt.py::test_graphql_character_query_by_id[1-Rick Sanchez] PASSED [ 56%]
+tests/api/test_graphql_ddt.py::test_graphql_character_query_by_id[2-Morty Smith] PASSED [ 60%]
+tests/api/test_graphql_ddt.py::test_graphql_character_query_by_id[9999-None] PASSED [ 64%]
+tests/api/test_location.py::test_get_all_locations PASSED                [ 68%]
+tests/api/test_location.py::test_location_detail PASSED                  [ 72%]
+tests/api/test_location_ddt.py::test_location_by_id[1-Earth (C-137)] PASSED [ 76%]
+tests/api/test_location_ddt.py::test_location_by_id[20-Earth (Replacement Dimension)] PASSED [ 80%]
+tests/api/test_location_ddt.py::test_location_by_id[9999-None] PASSED    [ 84%]
+tests/ui/test_home_page.py::test_bad_character_id 
+-------------------------------- live log setup --------------------------------
+INFO     WDM:logger.py:11 ====== WebDriver manager ======
+INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+INFO     WDM:logger.py:11 Driver [/Users/edfancher/.wdm/drivers/chromedriver/mac64/137.0.7151.119/chromedriver-mac-arm64/chromedriver] found in cache
+PASSED                                                                   [ 88%]
+tests/ui/test_home_page.py::test_character_cards_present 
+-------------------------------- live log setup --------------------------------
+INFO     WDM:logger.py:11 ====== WebDriver manager ======
+INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+INFO     WDM:logger.py:11 Driver [/Users/edfancher/.wdm/drivers/chromedriver/mac64/137.0.7151.119/chromedriver-mac-arm64/chromedriver] found in cache
+-------------------------------- live log call ---------------------------------
+INFO     root:home_page.py:26 Number of character cards: 6
+PASSED                                                                   [ 92%]
+tests/ui/test_home_page.py::test_docs_link 
+-------------------------------- live log setup --------------------------------
+INFO     WDM:logger.py:11 ====== WebDriver manager ======
+INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+INFO     WDM:logger.py:11 Driver [/Users/edfancher/.wdm/drivers/chromedriver/mac64/137.0.7151.119/chromedriver-mac-arm64/chromedriver] found in cache
+PASSED                                                                   [ 96%]
+tests/ui/test_home_page.py::test_footer_copyright_date 
+-------------------------------- live log setup --------------------------------
+INFO     WDM:logger.py:11 ====== WebDriver manager ======
+INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+INFO     WDM:logger.py:11 Driver [/Users/edfancher/.wdm/drivers/chromedriver/mac64/137.0.7151.119/chromedriver-mac-arm64/chromedriver] found in cache
+PASSED                                                                   [100%]
+
+=============================== warnings summary ===============================
+venv/lib/python3.9/site-packages/urllib3/__init__.py:35
+  /Users/edfancher/interview_practice/witnessai/rickandmorty-tests/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 25 passed, 1 warning in 21.47s ========================
