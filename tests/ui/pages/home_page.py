@@ -25,3 +25,4 @@ class HomePage(BasePage):
         number_character_card = len(self.driver.find_elements(*self.character_card_selector))
         logging.info(f"Number of character cards: {number_character_card}")
         return number_character_card > 0
+

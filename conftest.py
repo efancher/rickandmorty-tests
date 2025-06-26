@@ -9,7 +9,7 @@ import shutil
 def driver():
     options = webdriver.ChromeOptions()
     options.add_argument("--no-sandbox")
-    #options.add_argument("--headless=new")
+    options.add_argument("--headless=new")
     options.add_argument("--disable-dev-shm-usage")    
     # Create a unique temp directory for user data to avoid conflicts
     user_data_dir = tempfile.mkdtemp()
